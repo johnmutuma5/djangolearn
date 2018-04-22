@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Django Notes</title>
+    <title>{{ title }}</title>
   </head>
   <body>
     <div class="container">
@@ -11,7 +11,7 @@
 
         {% block main %}
         {% endblock %}
-        
+
       </main>
       <h3>Globally common content can also come here in root base template after loading content from extending blocks</h3>
     </div>

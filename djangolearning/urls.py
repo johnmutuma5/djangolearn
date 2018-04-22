@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.shortcuts import render
+
+def index(request):
+    contx = {'title': 'Django Learning'}
+    return render(request, 'index.html', contx)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'posts/', include('posts.urls'))
+    path(r'posts/', include('posts.urls')),
+    path(r'', index)
 ]

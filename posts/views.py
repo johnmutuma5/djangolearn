@@ -10,5 +10,5 @@ def index_json(request):
     return response
 
 def posts_index(request):
-    ctx = None
+    ctx = {'title': 'Django Learning - A quick guide'}
     return render(request, 'posts/index.html', ctx)
