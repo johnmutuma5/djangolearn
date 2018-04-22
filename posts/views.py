@@ -9,6 +9,6 @@ def index_json(request):
     response['content-type'] = 'applciation/json'
     return response
 
-def index_html(request):
+def posts_index(request):
     ctx = None
     return render(request, 'posts/index.html', ctx)

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Django Notes</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Any globally common content can go here in root base template; these are the kinds that persist across all pages</h3>
+      <main>
+
+        {% block main %}
+        {% endblock %}
+        
+      </main>
+      <h3>Globally common content can also come here in root base template after loading content from extending blocks</h3>
+    </div>
+  </body>
+</html>
