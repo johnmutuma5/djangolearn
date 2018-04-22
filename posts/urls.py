@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     # path(r'', )
-    re_path(r'^$', views.index)
+    re_path(r'^$', views.index_html, name='posts_index')
 ]
